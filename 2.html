@@ -39,32 +39,38 @@
 </head>
 <body>
     <script>
-        var a = document.getElementById("sidea");
-        var b = document.getElementById("sideb");
-        var c = document.getElementById("sidec");
-        var s = ((a + b + c)/2);
-        var resa = Math.sqrt(s*((s - a)(s - b)(s - c)));
-        var resp = a + b + c;
-
+        
         function calculateArea() {
-            document.getElementById("resulta").innerHTML = resa + " cm<sup>2</sup>";
+            let a = parseInt(sidea.value);
+            let b = parseInt(sideb.value);
+            let c = parseInt(sidec.value);
+            let s = ((a + b + c)/2);
+            let resa = Math.sqrt(s*((s - a)*(s - b)*(s - c)));
+            resulta.innerHTML = resa + " cm<sup>2</sup>";
         }
 
         function calculatePerimeter() {
-            document.getElementById("resultp").innerHTML = resp + " cm";
+             let a = parseInt(sidea.value);
+             let b = parseInt(sideb.value);
+             let c = parseInt(sidec.value);
+             let resp = a + b + c;
+            resultp.innerHTML = resp + " cm";
         }
 
     </script>
 
     <h1>Calculating the area and the perimeter<br> of a triangle by given side length.</h1>
-    <input type="text" id="sidea" name="sidea" placeholder="Side A..." maxlength="20"><br>
-    <label for="sidea"></label>
-    <input type="text" id="sideb" name="sideb" placeholder="Side B..." maxlength="20"><br>
-    <label for="sideb"></label>
-    <input type="text" id="sidec" name="sidec" placeholder="Side C..." maxlength="20"><br>
-    <label for="sidec"></label>
+
+    <input type="number" id="sidea"><br>
+
+    <input type="number" id="sideb"><br>
+
+    <input type="number" id="sidec"><br>
+    
+
     <button type="button" id="calca" name="calca" onclick="calculateArea()" >Calculate Area!</button>
     <button type="button" id="calcp" name="calcp" onclick="calculatePerimeter()" >Calculate Perimeter!</button>
+
     <h3>The area of the triangle is: <span id="resulta"></span></h3>
     <h3>The perimeter of the triangle is: <span id="resultp"></span> </h3>
 
