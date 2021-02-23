@@ -1,0 +1,3 @@
+Módosítások:
+  parseInt a változók elé - nélküle stringként kezelte a bevitt értéket
+  .toFixed(2) az eredmények megjelentíéséhez - korlátozott tizedesjegyek száma, 2db-ra
