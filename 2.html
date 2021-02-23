@@ -46,7 +46,7 @@
             let c = parseInt(sidec.value);
             let s = ((a + b + c)/2);
             let resa = Math.sqrt(s*((s - a)*(s - b)*(s - c)));
-            resulta.innerHTML = resa + " cm<sup>2</sup>";
+            resulta.innerHTML = resa.toFixed(2) + " cm<sup>2</sup>";
         }
 
         function calculatePerimeter() {
@@ -54,7 +54,7 @@
              let b = parseInt(sideb.value);
              let c = parseInt(sidec.value);
              let resp = a + b + c;
-            resultp.innerHTML = resp + " cm";
+            resultp.innerHTML = resp.toFixed(2) + " cm";
         }
 
     </script>
