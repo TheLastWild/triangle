@@ -1,3 +1,8 @@
 Módosítások:
-  parseInt a változók elé - nélküle stringként kezelte a bevitt értéket
+  parseInt a bevitt változók elé - nélküle stringként kezelte a bevitt értéket, nem hajtotta végre vagy hibásan a matematikai műveleteket
   .toFixed(2) az eredmények megjelentíéséhez - korlátozott tizedesjegyek száma, 2db-ra
+  placeholder visszahelyezve (memorizálás!)
+  
+  
+Alap:
+  Változók elnevezése angol vagy angol rövidítés (pl.: resp - result perimeter)
